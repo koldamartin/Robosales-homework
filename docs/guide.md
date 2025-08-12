@@ -49,6 +49,7 @@ You will find a CSV file named `raw_tenisove_micky.csv` in the `data/` folder of
      * Leave all other columns unchanged
 
    - **Save the cleaned data:** Save the cleaned DataFrame to a new CSV file named `cleaned_tenisove_micky.csv` in the `data/` folder.
+   - **Make the script executable:** Make the script executable from the command line using the `if __name__ == "__main__":` construct.
 
 
 ## 4. README.md Requirements
@@ -58,7 +59,7 @@ Your README.md must include:
 2. **How to Copy the Project:** Instructions on how to clone the repository to local machine.
 3. **How to Start the Environment:** Steps to activate the uv virtual environment.
 4. **How to Install All Dependencies:** Instructions on installing pandas and numpy using uv.
-5. **How to Run the Script:** Clear steps on how to execute your clean_data.py script.
+5. **How to Run the Script:** Include the CLI command to run your clean_data.py script.
 
 ## 5. Submission guidelines
 You will submit your homework by creating a Pull Request (PR) to the main branch of this repository.
