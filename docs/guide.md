@@ -18,11 +18,11 @@ Your first task is to set up the project using `uv`.
 
 1. Clone the project from GitHub to your local machine using https:
     ```bash
-    https://github.com/koldamartin/Robosales-homework.git
+    git clone https://github.com/koldamartin/Robosales-homework.git
     ```
     or using SSH
     ```bash
-    git@github.com:koldamartin/Robosales-homework.git
+    git clone git@github.com:koldamartin/Robosales-homework.git
     ```
 2. Initialize the project and create a virtual environment using `uv` (Use Python > 3.8):
 3. Activate the virtual environment
