@@ -37,7 +37,7 @@ You will find a CSV file named `raw_tenisove_micky.csv` in the `data/` folder of
 2. **The script will:**
    - **Load the data:** Use pandas to load `data/raw_tenisove_micky.csv` into a DataFrame.
    - **Clean the data:** Apply appropriate data cleaning techniques using pandas and numpy:
-     * Remove all rows that are not 'Tenisové míče' in its `title` column. (e.g. Koše na tenisové míče, Tuby na sbírání míčků)
+     * Remove all rows that are not tennis balls in its `title` column. ("Koše na tenisové míče" and "Tuby na sbírání míčků")
      * Remove these prefixes from title column: "Tenisové míče", "Dětské tenisové míče", "Velký tenisový míč", (e.g. "Tenisové míče Head Pro (3 Pack)" -> "Head Pro (3 Pack)")
      * Create a 'group_title' column, that will have same values as 'title' (also without prefixes)
      * Convert 'price_czk' column to numerical values
@@ -46,6 +46,7 @@ You will find a CSV file named `raw_tenisove_micky.csv` in the `data/` folder of
      * Create two new columns: 'age_min' and 'age_max' (it will be numerical columns) based on 'Doporučený věk' column. Then drop the 'Doporučený věk' column.
      * Fill all NaN values in 'Doporučený povrch' column with value 'všechny povrchy'
      * In all columns drop the double spaces. (e.g. "Tenisové míče Head  Pro (3 Pack)" notice the double space between "Head" and "Pro")
+     * Remove columns with redundant information (The same or very similar information is already present in other column)
      * Leave all other columns unchanged
 
    - **Save the cleaned data:** Save the cleaned DataFrame to a new CSV file named `cleaned_tenisove_micky.csv` in the `data/` folder.
@@ -67,7 +68,7 @@ You will submit your homework by creating a Pull Request (PR) to the main branch
 **Steps:**
 
 1. Create a new feature branch: Before you start coding, create a new branch for your work.
-2. Implement your solution: Write your `clean_data.py` script, the `README.md` file and the cleaned csv.
+2. Implement your solution: Write your `clean_data.py` script, the `README.md` file, the cleaned csv and all other files created during the process (except .venv)
 3. Commit your changes: Commit your changes to the new branch.
 4. Push your branch to the Github repository to the newly created branch
 5. Create a PR: Create a Pull Request (PR) from your branch to the main branch.
