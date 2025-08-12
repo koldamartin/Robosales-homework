@@ -16,7 +16,14 @@ Your first task is to set up the project using `uv`.
 
 ## 2. Steps
 
-1. Clone the project from GitHub to your local machine:
+1. Clone the project from GitHub to your local machine using https:
+    ```bash
+    https://github.com/koldamartin/Robosales-homework.git
+    ```
+    or using SSH
+    ```bash
+    git@github.com:koldamartin/Robosales-homework.git
+    ```
 2. Initialize the project and create a virtual environment using `uv` (Use Python > 3.8):
 3. Activate the virtual environment
 4. Install required libraries using `uv`, you will need `pandas` and possibly `numpy`:
